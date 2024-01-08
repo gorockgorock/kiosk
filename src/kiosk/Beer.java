@@ -2,11 +2,11 @@ package kiosk;
 
 public class Beer extends menu {
 
-    private final String name;
-    private final String description;
-    private final int price;
+    private String name;
+    private String description;
+    private double price;
 
-    public Beer(String name, String description, int price) {
+    public Beer(String name, String description, double price) {
         this.name = name;
         this.description = description;
         this.price = price;

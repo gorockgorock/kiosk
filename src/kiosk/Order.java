@@ -2,7 +2,9 @@ package kiosk;
 
 import java.awt.*;
 
-public class Order extends menu{private final menu menu;
+public class Order extends menu{
+
+    private menu menu;
 
     public Order(menu menu) {
         this.menu = menu;
@@ -16,7 +18,7 @@ public class Order extends menu{private final menu menu;
         return menu.getDescription();
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return menu.getPrice();
     }
 

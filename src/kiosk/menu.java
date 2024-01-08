@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class menu {
     private String name;
     private String description;
-    private int price;
+    private double price;
 
     public String getName() {
         return this.name;
@@ -15,7 +15,7 @@ public class menu {
         return this.description;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return this.price;
     }
 }
