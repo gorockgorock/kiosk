@@ -11,9 +11,9 @@ public class MainScreen {
     List<Drinks> drinks = new ArrayList<>();
     List<Beer> beer = new ArrayList<>();
 
-    Cart cart = new Cart();
+    private Cart cart = new Cart();
 
-    Scanner sc = new Scanner(System.in);
+    private Scanner sc = new Scanner(System.in);
 
 
     public void ShowMainScreen() {
@@ -99,14 +99,14 @@ public class MainScreen {
                 "위 메뉴를 장바구니에 추가하시겠습니까?\n" +
                 "1. 확인        2. 취소");
 
-        int selectA = sc.nextInt();
+        int choiseA = sc.nextInt();
         while (true) {
-            if (selectA == 1) {
+            if (choiseA == 1) {
                 Order order = new Order(selectb);
                 cart.addOrder(order);
                 System.out.println(selectb.getName() + "가 카트에 추가되었습니다.");
                 break;
-            } else if (selectA == 2) {
+            } else if (choiseA == 2) {
                 System.out.println("주문이 취소되었습니다");
                 break;
             } else {

@@ -1,12 +1,10 @@
 package kiosk;
 
-import java.awt.*;
+public class Order {
 
-public class Order extends menu{
+    private Menu menu;
 
-    private menu menu;
-
-    public Order(menu menu) {
+    public Order(Menu menu) {
         this.menu = menu;
     }
 

@@ -1,8 +1,6 @@
 package kiosk;
 
-import java.util.ArrayList;
-
-public class menu {
+public class Menu {
     private String name;
     private String description;
     private double price;

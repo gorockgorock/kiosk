@@ -1,9 +1,10 @@
 package kiosk;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Cart {
-    private List<Order> orderList;
+    private List<Order> orderList = new ArrayList<>();
     private int orderNumber = 1;
 
     public Cart() {}
